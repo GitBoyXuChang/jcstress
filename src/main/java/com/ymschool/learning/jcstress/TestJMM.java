@@ -11,14 +11,18 @@ import static org.openjdk.jcstress.annotations.Expect.*;
 
 public class TestJMM {
 
+    // 指定使用并发测试
     @JCStressTest
+    // 预测的结果与类型，附加描述信息
     @Outcome(id = {"0, 1", "1, 0", "1, 1"}, expect = ACCEPTABLE, desc = "Trivial under sequential consistency")
     @Outcome(id = "0, 0", expect = ACCEPTABLE_INTERESTING, desc = "Violates sequential consistency")
+    // 标注需要测试的类
     @State
     public static class PlainExecutionOrder {
         int x, y;
         int i, j;
 
+        // 标记方法使用多线程
         @Actor
         public void actor1(II_Result r) {
             x = 1;

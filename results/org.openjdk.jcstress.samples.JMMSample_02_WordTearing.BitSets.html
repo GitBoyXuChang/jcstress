@@ -22,7 +22,7 @@
  </style>
 </head>
 <body>
-<h1>com.ymschool.learning.jcstress.TestJMM.PlainExecutionOrder</h1>
+<h1>org.openjdk.jcstress.samples.JMMSample_02_WordTearing.BitSets</h1>
 <h3>Description and references</h3>
 <p>null</p>
 <h3>Environment</h3>
@@ -115,40 +115,31 @@ Stride: [10, 10000] (capped by NONE)</td>
 <th>Interpretation</th>
 </tr>
 <tr>
-<td align='center'>0, 0</td>
-<td align='right' width='7.5%' bgColor=#00ffff>4057346</td>
-<td align='right' width='7.5%' bgColor=#00ffff>3883112</td>
-<td align='right' width='7.5%' bgColor=#00ffff>5868770</td>
-<td align='right' width='7.5%' bgColor=#00ffff>136596</td>
+<td align='center'>false, true</td>
+<td align='right' width='7.5%' bgColor=#00ffff>72479</td>
+<td align='right' width='7.5%' bgColor=#00ffff>87765</td>
+<td align='right' width='7.5%' bgColor=#00ffff>205794</td>
+<td align='right' width='7.5%' bgColor=#00ffff>37669</td>
 <td>ACCEPTABLE_INTERESTING</td>
-<td>Violates sequential consistency</td>
+<td>Destroyed one update.</td>
 </tr>
 <tr>
-<td align='center'>0, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>21143989</td>
-<td align='right' width='7.5%' bgColor=#00ff00>20899253</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18970056</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4016874</td>
-<td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
+<td align='center'>true, false</td>
+<td align='right' width='7.5%' bgColor=#00ffff>74023</td>
+<td align='right' width='7.5%' bgColor=#00ffff>87107</td>
+<td align='right' width='7.5%' bgColor=#00ffff>209212</td>
+<td align='right' width='7.5%' bgColor=#00ffff>36350</td>
+<td>ACCEPTABLE_INTERESTING</td>
+<td>Destroyed one update.</td>
 </tr>
 <tr>
-<td align='center'>1, 0</td>
-<td align='right' width='7.5%' bgColor=#00ff00>22710904</td>
-<td align='right' width='7.5%' bgColor=#00ff00>24116110</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18604829</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4269111</td>
+<td align='center'>true, true</td>
+<td align='right' width='7.5%' bgColor=#00ff00>54114079</td>
+<td align='right' width='7.5%' bgColor=#00ff00>29553559</td>
+<td align='right' width='7.5%' bgColor=#00ff00>25495805</td>
+<td align='right' width='7.5%' bgColor=#00ff00>2012642</td>
 <td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
-</tr>
-<tr>
-<td align='center'>1, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>6872</td>
-<td align='right' width='7.5%' bgColor=#00ff00>2506</td>
-<td align='right' width='7.5%' bgColor=#00ff00>9776</td>
-<td align='right' width='7.5%' bgColor=#00ff00>1840</td>
-<td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
+<td>Seeing both updates intact.</td>
 </tr>
 <tr>
 <td></td>

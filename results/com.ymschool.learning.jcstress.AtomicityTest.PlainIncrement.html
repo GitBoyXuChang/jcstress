@@ -22,7 +22,7 @@
  </style>
 </head>
 <body>
-<h1>com.ymschool.learning.jcstress.TestJMM.PlainExecutionOrder</h1>
+<h1>com.ymschool.learning.jcstress.AtomicityTest.PlainIncrement</h1>
 <h3>Description and references</h3>
 <p>null</p>
 <h3>Environment</h3>
@@ -115,40 +115,22 @@ Stride: [10, 10000] (capped by NONE)</td>
 <th>Interpretation</th>
 </tr>
 <tr>
-<td align='center'>0, 0</td>
-<td align='right' width='7.5%' bgColor=#00ffff>4057346</td>
-<td align='right' width='7.5%' bgColor=#00ffff>3883112</td>
-<td align='right' width='7.5%' bgColor=#00ffff>5868770</td>
-<td align='right' width='7.5%' bgColor=#00ffff>136596</td>
+<td align='center'>1</td>
+<td align='right' width='7.5%' bgColor=#00ffff>3860565</td>
+<td align='right' width='7.5%' bgColor=#00ffff>1591082</td>
+<td align='right' width='7.5%' bgColor=#00ffff>2493097</td>
+<td align='right' width='7.5%' bgColor=#00ffff>275548</td>
 <td>ACCEPTABLE_INTERESTING</td>
-<td>Violates sequential consistency</td>
+<td>One update lost.</td>
 </tr>
 <tr>
-<td align='center'>0, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>21143989</td>
-<td align='right' width='7.5%' bgColor=#00ff00>20899253</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18970056</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4016874</td>
+<td align='center'>2</td>
+<td align='right' width='7.5%' bgColor=#00ff00>77517926</td>
+<td align='right' width='7.5%' bgColor=#00ff00>72610399</td>
+<td align='right' width='7.5%' bgColor=#00ff00>36034724</td>
+<td align='right' width='7.5%' bgColor=#00ff00>7987393</td>
 <td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
-</tr>
-<tr>
-<td align='center'>1, 0</td>
-<td align='right' width='7.5%' bgColor=#00ff00>22710904</td>
-<td align='right' width='7.5%' bgColor=#00ff00>24116110</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18604829</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4269111</td>
-<td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
-</tr>
-<tr>
-<td align='center'>1, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>6872</td>
-<td align='right' width='7.5%' bgColor=#00ff00>2506</td>
-<td align='right' width='7.5%' bgColor=#00ff00>9776</td>
-<td align='right' width='7.5%' bgColor=#00ff00>1840</td>
-<td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
+<td>Both updates.</td>
 </tr>
 <tr>
 <td></td>

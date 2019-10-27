@@ -22,7 +22,7 @@
  </style>
 </head>
 <body>
-<h1>com.ymschool.learning.jcstress.TestJMM.PlainExecutionOrder</h1>
+<h1>com.ymschool.learning.jcstress.AtomicityTest.PlainTransfer</h1>
 <h3>Description and references</h3>
 <p>null</p>
 <h3>Environment</h3>
@@ -116,39 +116,39 @@ Stride: [10, 10000] (capped by NONE)</td>
 </tr>
 <tr>
 <td align='center'>0, 0</td>
-<td align='right' width='7.5%' bgColor=#00ffff>4057346</td>
-<td align='right' width='7.5%' bgColor=#00ffff>3883112</td>
-<td align='right' width='7.5%' bgColor=#00ffff>5868770</td>
-<td align='right' width='7.5%' bgColor=#00ffff>136596</td>
+<td align='right' width='7.5%' bgColor=#00ffff>484</td>
+<td align='right' width='7.5%' bgColor=#00ffff>688</td>
+<td align='right' width='7.5%' bgColor=#00ffff>247</td>
+<td align='right' width='7.5%' bgColor=#00ffff>354</td>
 <td>ACCEPTABLE_INTERESTING</td>
-<td>Violates sequential consistency</td>
+<td>See partial result.</td>
 </tr>
 <tr>
-<td align='center'>0, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>21143989</td>
-<td align='right' width='7.5%' bgColor=#00ff00>20899253</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18970056</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4016874</td>
+<td align='center'>0, 100</td>
+<td align='right' width='7.5%' bgColor=#00ff00>27113948</td>
+<td align='right' width='7.5%' bgColor=#00ff00>34299093</td>
+<td align='right' width='7.5%' bgColor=#00ff00>36359512</td>
+<td align='right' width='7.5%' bgColor=#00ff00>3783452</td>
 <td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
+<td>Transfer completed.</td>
 </tr>
 <tr>
-<td align='center'>1, 0</td>
-<td align='right' width='7.5%' bgColor=#00ff00>22710904</td>
-<td align='right' width='7.5%' bgColor=#00ff00>24116110</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18604829</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4269111</td>
+<td align='center'>100, 0</td>
+<td align='right' width='7.5%' bgColor=#00ff00>584442</td>
+<td align='right' width='7.5%' bgColor=#00ff00>1193106</td>
+<td align='right' width='7.5%' bgColor=#00ff00>673761</td>
+<td align='right' width='7.5%' bgColor=#00ff00>346483</td>
 <td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
+<td>Transfer not start yet.</td>
 </tr>
 <tr>
-<td align='center'>1, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>6872</td>
-<td align='right' width='7.5%' bgColor=#00ff00>2506</td>
-<td align='right' width='7.5%' bgColor=#00ff00>9776</td>
-<td align='right' width='7.5%' bgColor=#00ff00>1840</td>
-<td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
+<td align='center'>100, 100</td>
+<td align='right' width='7.5%' bgColor=#00ffff>907</td>
+<td align='right' width='7.5%' bgColor=#00ffff>7594</td>
+<td align='right' width='7.5%' bgColor=#00ffff>1201</td>
+<td align='right' width='7.5%' bgColor=#00ffff>462</td>
+<td>ACCEPTABLE_INTERESTING</td>
+<td>See partial result.</td>
 </tr>
 <tr>
 <td></td>

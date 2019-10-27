@@ -22,7 +22,7 @@
  </style>
 </head>
 <body>
-<h1>com.ymschool.learning.jcstress.TestJMM.PlainExecutionOrder</h1>
+<h1>org.openjdk.jcstress.samples.APISample_05_SharedMetadata.PlainTest</h1>
 <h3>Description and references</h3>
 <p>null</p>
 <h3>Environment</h3>
@@ -115,40 +115,31 @@ Stride: [10, 10000] (capped by NONE)</td>
 <th>Interpretation</th>
 </tr>
 <tr>
-<td align='center'>0, 0</td>
-<td align='right' width='7.5%' bgColor=#00ffff>4057346</td>
-<td align='right' width='7.5%' bgColor=#00ffff>3883112</td>
-<td align='right' width='7.5%' bgColor=#00ffff>5868770</td>
-<td align='right' width='7.5%' bgColor=#00ffff>136596</td>
-<td>ACCEPTABLE_INTERESTING</td>
-<td>Violates sequential consistency</td>
-</tr>
-<tr>
-<td align='center'>0, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>21143989</td>
-<td align='right' width='7.5%' bgColor=#00ff00>20899253</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18970056</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4016874</td>
-<td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
-</tr>
-<tr>
-<td align='center'>1, 0</td>
-<td align='right' width='7.5%' bgColor=#00ff00>22710904</td>
-<td align='right' width='7.5%' bgColor=#00ff00>24116110</td>
-<td align='right' width='7.5%' bgColor=#00ff00>18604829</td>
-<td align='right' width='7.5%' bgColor=#00ff00>4269111</td>
-<td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
-</tr>
-<tr>
 <td align='center'>1, 1</td>
-<td align='right' width='7.5%' bgColor=#00ff00>6872</td>
-<td align='right' width='7.5%' bgColor=#00ff00>2506</td>
-<td align='right' width='7.5%' bgColor=#00ff00>9776</td>
-<td align='right' width='7.5%' bgColor=#00ff00>1840</td>
+<td align='right' width='7.5%' bgColor=#00ffff>19464398</td>
+<td align='right' width='7.5%' bgColor=#00ffff>22655490</td>
+<td align='right' width='7.5%' bgColor=#00ffff>8510672</td>
+<td align='right' width='7.5%' bgColor=#00ffff>347359</td>
+<td>ACCEPTABLE_INTERESTING</td>
+<td>Both actors came up with the same value: atomicity failure.</td>
+</tr>
+<tr>
+<td align='center'>1, 2</td>
+<td align='right' width='7.5%' bgColor=#00ff00>21561211</td>
+<td align='right' width='7.5%' bgColor=#00ff00>20439330</td>
+<td align='right' width='7.5%' bgColor=#00ff00>11500992</td>
+<td align='right' width='7.5%' bgColor=#00ff00>2107351</td>
 <td>ACCEPTABLE</td>
-<td>Trivial under sequential consistency</td>
+<td>actor1 incremented, then actor2.</td>
+</tr>
+<tr>
+<td align='center'>2, 1</td>
+<td align='right' width='7.5%' bgColor=#00ff00>20086232</td>
+<td align='right' width='7.5%' bgColor=#00ff00>20504491</td>
+<td align='right' width='7.5%' bgColor=#00ff00>13819277</td>
+<td align='right' width='7.5%' bgColor=#00ff00>1756701</td>
+<td>ACCEPTABLE</td>
+<td>actor2 incremented, then actor1.</td>
 </tr>
 <tr>
 <td></td>

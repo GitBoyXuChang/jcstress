@@ -21,6 +21,6 @@ public class ThreadPool01 implements  Runnable {
 
    @Override
    public void run() {
-      System.out.println("abc");
+      System.out.println("monkey");
    }
 }

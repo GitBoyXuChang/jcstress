@@ -4,6 +4,7 @@ import java.util.concurrent.*;
 
 /***
  * 拒绝策略测试
+ * RejectedExecutionHandler
  */
 public class RejectThreadPoolDemo {
 	public static class MyTask implements Runnable {
